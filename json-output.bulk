@@ -1,0 +1,12 @@
+{"index" : {"_type" : "baseline", "_id" : "1"}}
+{"enclave": "DATAMONK", "subnet": "10.10.10.0/24", "ipAddress": "10.10.10.14", "rcdType": "HOST", "rcdAttr": "A"}
+{"create" : {"_type" : "baseline", "_id" : "2"}}
+{"enclave": "DATAMONK", "subnet": "10.10.10.0/24", "ipAddress": "10.10.10.15", "rcdType": "HOST", "rcdAttr": "A"}
+{"create" : {"_type" : "baseline", "_id" : "3"}}
+{"enclave": "DATAMONK", "subnet": "10.10.10.0/24", "ipAddress": "10.10.10.87", "rcdType": "HOST", "rcdAttr": "A"}
+{"create" : {"_type" : "baseline", "_id" : "4"}}
+{"enclave": "SPIKENET", "subnet": "192.168.1.0/24", "ipAddress": "192.168.1.23", "rcdType": "HOST", "rcdAttr": "A"}
+{"create" : {"_type" : "baseline", "_id" : "5"}}
+{"enclave": "SPIKENET", "subnet": "192.168.1.0/24", "ipAddress": "192.168.1.45", "rcdType": "NETWORK", "rcdAttr": "A"}
+{"create" : {"_type" : "baseline", "_id" : "6"}}
+{"enclave": "DATAMONK", "subnet": "10.10.10.0/24", "ipAddress": "10.10.10.255", "rcdType": "BROADCAST", "rcdAttr": "A"}
