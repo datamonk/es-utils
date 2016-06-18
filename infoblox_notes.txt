@@ -1,0 +1,21 @@
+
+# Start for loop and set IFS to iterate over the Enclave list.
+
+1. Run Infoblox query "show network info Enclave=XXX" to collect subnets for the selected enclave.
+
+2. Using the subnets list from #1, build a cmd file (xxx.cf) for a batch call to Infoblox.
+> "show network <CIDR> ipam used"
+> "show network <CIDR> ipam used"
+...
+
+3. Run Infoblox query "ibcli.pl .... xxx.cf" and write used addresses to output file.
+
+4. Read in ipam results file from #3, parse IP address, address type, and selected subnet. Write fields to ES JSON structure to output file.
+
+# Loop back to #1 until enclave list is complete.
+
+5. Search for existing baseline index and delete. Put in case for prompt.
+
+6. Build Index mapping JSON and feild types.
+
+7. Load new data file from #4 using bulk api endpoint.
